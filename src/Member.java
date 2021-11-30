@@ -12,8 +12,8 @@ public class Member {
         return name;
     }
 
-    public void crossrun() {
-        if (maxrun <= Cross.crosslength) {
+    public void crossrun(Cross c) {
+        if (maxrun <= c.crosslength) {
             winner = true;
         } else {
             winner = false;
@@ -21,7 +21,7 @@ public class Member {
     }
 
     public void showResults() {
-        System.out.println("участник " + getName() + "  кросс длиной " + Cross.crosslength +" "+ winner);
+        System.out.println("участник " + getName() + "  кросс длиной " +" "+ winner);
     }
 }
 

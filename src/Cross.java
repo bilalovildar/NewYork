@@ -1,7 +1,13 @@
 public class Cross extends Course {
-    public static int crosslength;
+    public int crosslength;
 
-    public Cross(int crosslength) {
+    public Cross(int crosslength) {this.crosslength = crosslength;}
+
+    public int getCrosslength() {
+        return crosslength;
+    }
+
+    public void setCrosslength(int crosslength) {
         this.crosslength = crosslength;
     }
 }
